@@ -6,8 +6,7 @@
 
 ```
 . build/envsetup.sh
-git clone https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree lineageRecovery
-cd lineageRecovery
+git clone https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree device/samsung/j5nlte
 lunch lineage_j5nlte-eng
 mka recoveryimage
 ```
