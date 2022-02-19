@@ -1,10 +1,3 @@
-#
-# Copyright (C) 2021 The Android Open Source Project
-# Copyright (C) 2021 SebaUbuntu's TWRP device tree generator
-#
-# SPDX-License-Identifier: Apache-2.0
-#
-
 DEVICE_PATH := device/samsung/j5nlte
 
 # For building with minimal manifest
@@ -22,7 +15,6 @@ TARGET_OTA_ASSERT_DEVICE := j5nlte
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 14774288 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -50,10 +42,27 @@ LZMA_RAMDISK_TARGETS := recovery
 
 # Platform
 TARGET_BOARD_PLATFORM := default
-
-# LineageOS Recovery 
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 14774288
-TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/recovery.fstab
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := $(DEVICE_PATH)/recovery/recovery_keys.c
-TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
-TARGET_SCREEN_DENSITY := 420
+#################################
+# SHRP section
+###############
+TARGET_DEVICE := j5nlte
+SHRP_PATH := $(DEVICE_PATH)
+SHRP_DEVICE_CODE := j5nlte
+SHRP_MAINTAINER := daviiid99
+SHRP_OFFICIAL := false
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb-otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/class/camera/flash/rear_torch_flash
+SHRP_FLASH_MAX_BRIGHTNESS := 200
+SHRP_REC := /dev/block/platform/13540000.dwmmc0/by-name/RECOVERY
+SHRP_AB := false
+SHRP_REC_TYPE := Non-Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_EXPRESS := true
+LZMA_RAMDISK_TARGETS := recovery
