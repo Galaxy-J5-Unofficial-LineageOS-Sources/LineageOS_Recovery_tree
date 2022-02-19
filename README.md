@@ -3,11 +3,11 @@
 <br/>
 
 # Build Instructions
-<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree/edit/android-11.0/README.md#set-up-android-build-environment">1.- Set-Up Android Environment</a><br/>
-<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree/edit/android-11.0/README.md#create-build-path">2.- Create Build path Environment</a><br/>
-<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree/edit/android-11.0/README.md#init-shrp-repo--sync-products">3.- Init SHRP repo & Sync products</a><br/>
-<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree/edit/android-11.0/README.md#clone-j5-device-specific-repos-and--kernel-source">4.- Clone J5 device specific repos and & Kernel Source</a></br>
-<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree/edit/android-11.0/README.md#build-recovery-image">5.- Build recovery image</a>
+<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest#set-up-android-build-environment">1.- Set-Up Android Environment</a><br/>
+<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest#create-build-path">2.- Create Build path Environment</a><br/>
+<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest#init-shrp-repo--sync-products">3.- Init SHRP repo & Sync products</a><br/>
+<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest#clone-j5-device-specific-repos-and--kernel-source">4.- Clone J5 device specific repos and & Kernel Source</a></br>
+<a href="https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest#build-recovery-image">5.- Build recovery image</a>
 
 
 ## Set-up Android Build Environment
@@ -56,7 +56,7 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ## Clone J5 device specific repos
 ```
 rm -rf device/samsung/j5nlte # if exists
-git clone -b android-11.0 https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree device/samsung/j5nlte
+git clone -b SHRP https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest device/samsung/j5nlte
 ```
 
 ## Build recovery image
