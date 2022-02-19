@@ -53,12 +53,10 @@ repo init -u git://github.com/SHRP/manifest.git -b v3_11.0
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-## Clone J5 device specific repos and & Kernel Source
+## Clone J5 device specific repos
 ```
-rm -rf device/samsung/j5nlte && rm -rf kernel/samsung/msm8916  # if exists
+rm -rf device/samsung/j5nlte # if exists
 git clone -b android-11.0 https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/LineageOS_Recovery_tree device/samsung/j5nlte
-git clone https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/samsung_kernel_msm8916 kernel/samsung/msm8916
-git clone -b lineage-18.1 https://github.com/LineageOS/android_system_tools_dtbtool system/tools/dtbtool
 ```
 
 ## Build recovery image
