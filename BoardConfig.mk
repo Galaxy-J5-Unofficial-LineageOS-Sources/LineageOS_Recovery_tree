@@ -54,13 +54,6 @@ LZMA_RAMDISK_TARGETS := recovery
 # Platform
 TARGET_BOARD_PLATFORM := default
 
-# TWRP Configuration
-TW_THEME := portrait_hdpi
-TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_USE_TOOLBOX := true
-
 # LineageOS Recovery 
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 14774288
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/recovery.fstab
