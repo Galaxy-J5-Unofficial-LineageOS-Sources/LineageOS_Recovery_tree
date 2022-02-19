@@ -6,14 +6,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_j5nlte.mk \
     $(LOCAL_DIR)/lineage_j5nlte.mk
 
 
 COMMON_LUNCH_CHOICES := \
-    omni_j5nlte-user \
-    omni_j5nlte-userdebug \
-    omni_j5nlte-eng \
     lineage_j5nlte-user \
     lineage_j5nlte-userdebug \
     lineage_j5nlte-eng
