@@ -46,6 +46,7 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8916
 TARGET_KERNEL_VARIANT_CONFIG := msm8916_sec_j5nlte_eur_defconfig
+TARGET_KERNEL_CONFIG := msm8916_sec_defconfig
 
 # Ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
