@@ -45,7 +45,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/samsung/msm8916
-TARGET_KERNEL_CONFIG := msm8916_sec_defconfig VARIANT_DEFCONFIG=msm8916_sec_j5lte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
+TARGET_KERNEL_CONFIG := msm8916_sec_defconfig VARIANT_DEFCONFIG=msm8916_sec_j5nlte_eur_defconfig SELINUX_DEFCONFIG=selinux_defconfig
 
 # Ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
