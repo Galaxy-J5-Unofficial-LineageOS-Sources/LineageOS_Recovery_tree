@@ -47,6 +47,7 @@ TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
 TARGET_KERNEL_SOURCE := kernel/samsung/j5nlte
 TARGET_KERNEL_CONFIG := j5nlte_defconfig
+BOARD_RAMDISK_USE_XZ := true
 
 # Ramdisk compression
 LZMA_RAMDISK_TARGETS := recovery
