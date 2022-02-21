@@ -49,7 +49,7 @@ mkdir -p recovery/shrp && cd recovery/shrp
 
 ## Init SHRP repo & Sync products
 ```
-repo init -u git://github.com/SHRP/manifest.git -b v3_11.0
+repo init -u git://github.com/SHRP/manifest.git -b v3_9.0
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
