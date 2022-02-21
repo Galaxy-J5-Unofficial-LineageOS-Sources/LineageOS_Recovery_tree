@@ -55,8 +55,9 @@ repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 
 ## Clone J5 device specific repos
 ```
-rm -rf device/samsung/j5nlte # if exists
+rm -rf device/samsung/j5nlte && rm -rf kernel/samsung/msm8916  # if exists
 git clone -b SHRP https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/Recovery-Manifest device/samsung/j5nlte
+git clone https://github.com/Galaxy-J5-Unofficial-LineageOS-Sources/samsung_kernel_msm8916 kernel/samsung/msm8916
 ```
 
 ## Build recovery image
